@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urooj's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d0f35bf472.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Kevin</span> <br>Jen From Australia.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="" srcset="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rerum quae est obcaecati, vitae
+                        tempore corporis deleniti itaque natus eaque quas commodi? Hic numquam totam laudantium! Nihil
+                        laudantium modi quos eaque omnis blanditiis rem quae?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Responsive Website Design</span><br>freeCodeCamp</li>
+                            <li><span>QGIS</span><br>ICIMOD</li>
+                            <li><span>Data Analysis</span><br>Alison</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Matriculation</span><br>Green Land High Grammar School</li>
+                            <li><span>Intermediate</span><br>Khursheed Govt. Girls Degree College</li>
+                            <li><span>Bachelor's of Studies</span><br>IES, University Of Karachi</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Teacher</span><br>University of Karachi</li>
+                            <li><span>Research associate</span><br>University of Karachi</li>
+                            <li><span>GIS Analyst</span><br>MapCarto, EMC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>GIS Mapping</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nisi amet sunt fuga
+                        perferendis nobis!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>Teaching</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nisi amet sunt fuga
+                        perferendis nobis!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>Research Work</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta nisi amet sunt fuga
+                        perferendis nobis!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Web Developement</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, placeat.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Data Analysis</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, placeat.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Writing</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, placeat.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- contact  -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aimanfatimabp@gamil.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> +92 330 8117331</p>
+                    <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/aiman-af"><i class="fa-brands fa-github"></i></a>
+                    <a href="www.linkedin.com/in/syeda-aiman-fatima-910664253"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                <input type="text "name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="copyright">
+    <p>Copyright © Kevin. Made with <i class="fa-sharp fa-solid fa-heart"></i> By Easy Tutorials.</p>
+    </div>
+</body>
+
+</html>
